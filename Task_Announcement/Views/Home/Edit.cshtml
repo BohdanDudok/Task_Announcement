@@ -2,16 +2,20 @@
 @{
     ViewBag.Title = "Edit announcement";
 }
-<form asp-action="edit" asp-controller="home" asp-route-id="@Model.Id">
-    <div class="form-group">
-        <label asp-for="Title" class="control-label">Title</label>
-        <input type="text" asp-for="Title" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Description" class="control-label">Discription</label>
-        <input type="text" asp-for="Description" class="form-control" />
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Сохранить" class="button" />
-    </div>
-</form>
+    <form asp-action="edit" asp-controller="home" asp-route-id="@Model.Id">
+        <div class="form-group">
+            <label asp-for="Title" class="control-label">Title</label>
+            <input type="text" asp-for="Title" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" class="control-label">Discription</label>
+            <input type="text" asp-for="Description" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="data" class="control-label">Data</label>
+            <input type="text" asp-for="data" class="form-control" value="@DateTime.Today.ToString("d")" autocomplete="on" disabled />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Сохранить" class="button" />
+        </div>
+    </form>

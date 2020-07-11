@@ -1,6 +1,6 @@
 ﻿@model Task_Announcement.Models.Announce
 @{
-    ViewBag.Title = "Створення оголошення";
+    ViewBag.Title = "Create Announcement";
 }
 
     <form asp-action="create" asp-controller="home">
@@ -13,6 +13,10 @@
             <input type="text" asp-for="Description" class="form-control" />
         </div>
         <div class="form-group">
-            <input type="submit" value="Отправить" class="button" />
+            <label asp-for="data" class="control-label">Data</label>
+            <input type="text" asp-for="data" class="form-control" value="@DateTime.Today.ToString("d")" autocomplete="on" disabled/>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Enter" class="button" />
         </div>
     </form>
