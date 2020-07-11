@@ -1,8 +1,14 @@
-﻿@{
+﻿@model IEnumerable<Task_Announcement.Models.Announce>
+
+@{
     ViewData["Title"] = "Home Page";
 }
-
+<h1 class="announcement">Announcement</h1>
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @foreach (var announce in Model)
+    {
+        <h1>@announce.Title</h1>
+        <p>@announce.Description</p>
+        <p>@announce.data</p>
+    }
 </div>
