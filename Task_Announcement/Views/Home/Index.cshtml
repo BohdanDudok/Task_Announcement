@@ -7,8 +7,10 @@
         <div class="inside_block1"><h1>@announce.Title</h1></div>
         <div class="inside_block2"><p>@announce.Description</p></div>
         <div class="inside_block3"><p>@announce.data</p></div>
-        <div class="inside_block4"><a asp-action="Edit" asp-controller="Home" asp-route-id="@announce.Id">Edit</a>
-                                   <a asp-action="Delete" asp-controller="Home" asp-route-id="@announce.Id">Delete</a></div>
+        <div class="inside_block4"><button class="button">
+    <a asp-action="Edit" asp-controller="Home" asp-route-id="@announce.Id">Edit</a></button>
+    <button class="button"><a asp-action="Delete" asp-controller="Home" asp-route-id="@announce.Id">Delete</a></button>
+</div>
     </div>
         }
 </div>

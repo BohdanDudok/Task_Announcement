@@ -3,20 +3,9 @@
     ViewBag.Title = "Create Announcement";
 }
 
-    <form asp-action="create" asp-controller="home">
-        <div class="form-group">
-            <label asp-for="Title" class="control-label">Title</label>
-            <input type="text" asp-for="Title" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label asp-for="Description" class="control-label">Discription</label>
-            <input type="text" asp-for="Description" class="form-control" />
-        </div>
-        <div class="form-group">
-            <label asp-for="data" class="control-label">Data</label>
-            <input type="text" asp-for="data" class="form-control" value="@DateTime.Today.ToString("d")" autocomplete="on"/>
-        </div>
-        <div class="form-group">
+    <form asp-action="create" asp-controller="home">       
+            <input type="text" asp-for="Title" class="textbox" placeholder="Title" />           
+            <textarea type="text" asp-for="Description" class="message" placeholder="Description"></textarea>
+            <input type="text" asp-for="data" class="textbox" value="@DateTime.Today.ToString("d")" autocomplete="on"/>
             <input type="submit" value="Enter" class="button" />
-        </div>
     </form>
