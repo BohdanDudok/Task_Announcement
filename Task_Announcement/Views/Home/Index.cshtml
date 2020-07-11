@@ -1,14 +1,14 @@
 ﻿@model IEnumerable<Task_Announcement.Models.Announce>
 
-@{
-    ViewData["Title"] = "Home Page";
-}
-<h1 class="announcement">Announcement</h1>
-<div class="text-center">
-    @foreach (var announce in Model)
-    {
-        <h1>@announce.Title</h1>
-        <p>@announce.Description</p>
-        <p>@announce.data</p>
-    }
+<div>
+        @foreach (var announce in Model)
+        {
+    <div class="block_announc">
+        <div class="inside_block1"><h1>@announce.Title</h1></div>
+        <div class="inside_block2"><p>@announce.Description</p></div>
+        <div class="inside_block3"><p>@announce.data</p></div>
+        <div class="inside_block4"><a asp-action="Edit" asp-controller="Home" asp-route-id="@announce.Id">Edit</a>
+                                   <a asp-action="Delete" asp-controller="Home" asp-route-id="@announce.Id">Delete</a></div>
+    </div>
+        }
 </div>

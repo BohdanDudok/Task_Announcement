@@ -1,6 +1,49 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-.announcement{
+﻿.announcement{
     text-align:center;
+}
+body {
+    color: #002f34;
+}
+.button {
+    font-weight: 700;
+    color: black;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: white;
+    margin:auto;
+
+}
+.block_announc {
+    width: 80%;
+    background-color:antiquewhite;
+    margin:auto;
+}
+.inside_block1 {
+    width: 80%;
+    margin: auto;
+    height: 50px;
+    text-align: center;
+}
+.inside_block2 {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    text-align: left;
+}
+.inside_block3 {
+    width: 80%;
+    height: 25px;
+    margin: auto;
+    text-align: right;
+}
+.inside_block4 {
+    width: 80%;
+    height: 50px;
+    margin:auto;
+    text-align: right;
+}
+.block_create {
+    width: 80%;
+    margin: auto;
+    text-align:right;
 }
