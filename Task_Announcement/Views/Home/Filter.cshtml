@@ -28,3 +28,26 @@
         </div>
     }
 </div>
+<h1 class="announcement">TOP-3</h1>
+<div>
+    @{int count = 0;
+        foreach (var announce in Model)
+        {
+            <div class="block_announc">
+                <div class="inside_block1">@announce.Title</div>
+                <div class="inside_block2">@announce.Description</div>
+                <div class="inside_block3">@announce.data</div>
+                <div class="inside_block4">
+                    <button class="button">
+                        <a asp-action="Edit" asp-controller="Home" asp-route-id="@announce.Id">Edit</a>
+                    </button>
+                    <button class="button"><a asp-action="Delete" asp-controller="Home" asp-route-id="@announce.Id">Delete</a></button>
+                </div>
+            </div>
+                count++;
+                if (count == 3)
+                { break; }
+            }
+        }
+    }
+</div>

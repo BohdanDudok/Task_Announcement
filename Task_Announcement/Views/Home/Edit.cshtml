@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "Edit announcement";
 }
-    <form asp-action="edit" asp-controller="home" asp-route-id="@Model.Id">
+    <form id="form" asp-action="edit" asp-controller="home" asp-route-id="@Model.Id">
             <input type="text" asp-for="Title" class="textbox" />
             <textarea type="text" asp-for="Description" class="message"></textarea>
             <input type="text" asp-for="data" class="textbox" value="@DateTime.Today.ToString("d")" autocomplete="on" />

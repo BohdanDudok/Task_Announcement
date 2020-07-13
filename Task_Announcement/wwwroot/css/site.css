@@ -15,6 +15,13 @@ body {
     background: white;
     margin:auto;
 }
+.button1 {
+    font-weight: 700;
+    color: black;
+    height:48px;
+    border-radius: 3px;
+    background: white;
+}
 .block_announc {
     width: 80%;
     margin: auto;
@@ -58,7 +65,7 @@ body {
     margin: auto;
     text-align:right;
 }
-form {
+#form {
     margin: 0 auto;
     width: 50%;
     box-sizing: border-box;
@@ -94,4 +101,13 @@ form {
     padding: 10px;
     margin-bottom: 30px;
     overflow: hidden;
+}
+.search {
+    height: 20px;
+    width: 25%;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
 }

@@ -3,7 +3,7 @@
     ViewBag.Title = "Create Announcement";
 }
 
-    <form asp-action="create" asp-controller="home">       
+    <form id="form" asp-action="create" asp-controller="home">       
             <input type="text" asp-for="Title" class="textbox" placeholder="Title" />           
             <textarea type="text" asp-for="Description" class="message" placeholder="Description"></textarea>
             <input type="text" asp-for="data" class="textbox" value="@DateTime.Today.ToString("d")" autocomplete="on"/>

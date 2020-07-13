@@ -4,7 +4,7 @@
 }
 
 
-    <form asp-controller="Home" asp-action="Delete" method="post">
+    <form id="form" asp-controller="Home" asp-action="Delete" method="post">
         <input type="text" value="@Html.DisplayFor(model => model.Title)" class="textbox" autocomplete="on" disabled />
         <textarea disabled type="text" class="message">@Html.DisplayFor(model => model.Description)</textarea>
         <input type="text" value="@Html.DisplayFor(model => model.data)" class="textbox" autocomplete="on" disabled/>
